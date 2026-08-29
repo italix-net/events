@@ -1,0 +1,45 @@
+{
+    "name": "italix/events",
+    "description": "Named events with declared listeners: printable, no wildcards, no cancellation, and a throwing listener does not take the dispatcher with it",
+    "type": "library",
+    "license": "MPL-2.0",
+    "version": "2.0.0",
+    "keywords": [
+        "events",
+        "listeners",
+        "hooks",
+        "dispatcher"
+    ],
+    "homepage": "https://github.com/italix-net/events",
+    "authors": [
+        {
+            "name": "Italix",
+            "email": "info@italix.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "italix/testing": "^2.0",
+        "psr/log": "^1.0 || ^2.0 || ^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Italix\\Events\\": ""
+        },
+        "files": [
+            "functions.php"
+        ]
+    },
+    "scripts": {
+        "test": [
+            "php tests/EventsTest.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "suggest": {
+        "psr/log": "^1.0 || ^2.0 || ^3.0 \u2014 log_failures_to() sends listener failures to any PSR-3 logger"
+    }
+}
